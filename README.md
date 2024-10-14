@@ -98,6 +98,7 @@ This project includes a Makefile (for VCS) that allows you to compile any number
 
 1. **Compile Design Files and Testbench**:
    To compile your design files and the testbench, run the following command in the terminal:
+
    ```bash
    make design1.v design2.v testbench.v
    ```
@@ -116,12 +117,14 @@ This is Makefile_2.0, it is set up to compile all Verilog files in the `design` 
 2. **Run Compilation**:
    - Open a terminal in the directory containing the `Makefile`.
    - Run the following command to compile all files:
+ 
      ```bash
      make
      ```
 
 3. **Clean Up**:
    - To remove all generated files, run:
+  
      ```bash
      make clean
      ```
@@ -137,18 +140,23 @@ Makefile for Icarus for easy compilation and simulation, follow the steps:
 2. Download and rename `icarus_Makefile` to `Makefile` and place it in project directory
 
 3. To compile the design and run the simulation:
+
      ```bash
      make run
      ```
-This will also create the `waveform.vcd` in the new `output` folder along with other output files
+     
+    This will also create the `waveform.vcd` in the new `output` folder along with other output files
 
-4. To View the waveform: 
+4. To View the waveform:
+
      ```bash
      make wave
      ```
-This opens GTKWave and shows waveforms
+     
+    This opens GTKWave and shows waveforms
 
 5. To clean any generated files (`output`):
+
      ```bash
      make clean
      ```
@@ -168,12 +176,12 @@ Icarus Verilog (`iverilog`) is a free, open-source Verilog simulation and synthe
     sudo apt update
     ```
 
-2. Install Icarus Verilog:
+3. Install Icarus Verilog:
     ```bash
     sudo apt install iverilog
     ```
 
-3. Verify the installation:
+4. Verify the installation:
     ```bash
     iverilog -v
     ```
