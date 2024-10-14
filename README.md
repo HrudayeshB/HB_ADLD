@@ -81,6 +81,17 @@ This is my repo that stores all my assignments and some projects related to Digi
 
 These flags cover the most useful and common options for both VCS and Icarus Verilog to help you compile, simulate, and debug Verilog designs efficiently.
 
+## Using the Makefile for Compilation
+
+This project includes a Makefile (for VCS) that allows you to compile any number of Verilog design files along with a specified testbench file. The testbench must always be the last argument in the command.
+
+### Compilation for VCS (Synopsys) only.
+
+1. **Compile Design Files and Testbench**:
+   To compile your design files and the testbench, run the following command in the terminal:
+   ```bash
+   make design1.v design2.v testbench.v
+   ```
 
 # Verilog Simulation with Icarus Verilog and GTKWave
 
