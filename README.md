@@ -218,9 +218,9 @@ GTKWave is a waveform viewer used to visualize signal activity during simulation
 
 ### To change Font family and size of waves and signals in GTKWave
 
-1. Create a (`.gtkwaverc`) file anywhere (preferably in (`.config`) directory) and edit the file use any editor (here: (`nano`)).
+1. Create a (`.gtkwaverc`) file in home directory and edit the file use any editor (here: (`nano`)).
 	```bash
-    nano ~/.config/.gtkwaverc
+    nano ~/.gtkwaverc
     ```
 
 2. Edit the file as per requirement, save and exit:
@@ -234,7 +234,7 @@ GTKWave is a waveform viewer used to visualize signal activity during simulation
 
 3. Restart GTKWave or reload the (`.gtkwaverc`) file by running:
 	```bash
-    gtkwave --rcfile ~/.config/.gtkwaverc
+    gtkwave --rcfile ~/.gtkwaverc
     ```
 
 This will apply the changes to the wave and signal section
