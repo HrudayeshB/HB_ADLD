@@ -216,6 +216,29 @@ GTKWave is a waveform viewer used to visualize signal activity during simulation
 
 ---
 
+### To change Font family and size of waves and signals in GTKWave
+
+1. Create a (`.gtkwaverc`) file anywhere (preferably in (`.config`) directory) and edit the file use any editor (here: (`nano`)).
+	```bash
+    nano ~/.config/.gtkwaverc
+    ```
+
+2. Edit the file as per requirement, save and exit:
+	```bash
+    [wave]
+    fontname_waves = Monospace 12
+
+    [signal]
+    fontname_signals = Monospace 12
+    ```
+
+3. Restart GTKWave or reload the (`.gtkwaverc`) file by running:
+	```bash
+    gtkwave --rcfile ~/.config/.gtkwaverc
+    ```
+
+This will apply the changes to the wave and signal section
+
 ## Additional Information
 
 - **Icarus Verilog Documentation**: [https://iverilog.fandom.com/wiki/Main_Page](https://iverilog.fandom.com/wiki/Main_Page)
