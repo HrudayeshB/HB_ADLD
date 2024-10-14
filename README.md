@@ -85,6 +85,15 @@ These flags cover the most useful and common options for both VCS and Icarus Ver
 
 This project includes a Makefile (for VCS) that allows you to compile any number of Verilog design files along with a specified testbench file. The testbench must always be the last argument in the command.
 
+### Instructions
+
+1. **Download the Makefile**:
+   Download the `Makefile` provided in this repository.
+
+2. **Place the Makefile**:
+   Save the `Makefile` in the same directory where your Verilog design files and testbench are located. This allows the Makefile to access the source files during compilation.
+
+
 ### Compilation for VCS (Synopsys) only.
 
 1. **Compile Design Files and Testbench**:
