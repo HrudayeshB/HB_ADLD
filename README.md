@@ -102,6 +102,32 @@ This project includes a Makefile (for VCS) that allows you to compile any number
    make design1.v design2.v testbench.v
    ```
 
+## Using the Makefile with Design and Testbench Folders
+
+This is Makefile_2.0, it is set up to compile all Verilog files in the `design` and `testbench` folders. The following steps outline how to use it.
+
+### Instructions:
+
+1. **Prepare Directories**:
+   - Place all your Verilog design files (`*.v`) in the `design` folder.
+   - Place your testbench file(s) (`*.v`) in the `testbench` folder.
+   - Also rename the `Makefile_2.0` to `Makefile` and place it in the same directory.
+
+2. **Run Compilation**:
+   - Open a terminal in the directory containing the `Makefile`.
+   - Run the following command to compile all files:
+     ```bash
+     make
+     ```
+
+3. **Clean Up**:
+   - To remove all generated files, run:
+     ```bash
+     make clean
+     ```
+
+This setup automatically compiles all the design files in the `design` folder and the testbench files in the `testbench` folder.
+
 # Verilog Simulation with Icarus Verilog and GTKWave
 
 This guide explains how to install Icarus Verilog and GTKWave on Ubuntu, simulate Verilog designs, and view the resulting waveforms.
