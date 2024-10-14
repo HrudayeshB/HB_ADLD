@@ -128,6 +128,31 @@ This is Makefile_2.0, it is set up to compile all Verilog files in the `design` 
 
 This setup automatically compiles all the design files in the `design` folder and the testbench files in the `testbench` folder.
 
+## Makefile for Icarus Verilog
+
+Makefile for Icarus for easy compilation and simulation, follow the steps:
+
+1. Prepare `design` and `testbench` folders in the project folder same as for the VCS Makefile_2.0
+
+2. Download and rename `icarus_Makefile` to `Makefile` and place it in project directory
+
+3. To compile the design and run the simulation:
+     ```bash
+     make run
+     ```
+This will also create the `waveform.vcd` in the new `output` folder along with other output files
+
+4. To View the waveform: 
+     ```bash
+     make wave
+     ```
+This opens GTKWave and shows waveforms
+
+5. To clean any generated files (`output`):
+     ```bash
+     make clean
+     ```
+
 # Verilog Simulation with Icarus Verilog and GTKWave
 
 This guide explains how to install Icarus Verilog and GTKWave on Ubuntu, simulate Verilog designs, and view the resulting waveforms.
