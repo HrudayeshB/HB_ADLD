@@ -1,0 +1,286 @@
+$date
+	Mon Oct 14 18:23:59 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 4 ! y [3:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 4 # b [3:0] $end
+$var reg 4 $ c [3:0] $end
+$var reg 4 % d [3:0] $end
+$var reg 4 & e [3:0] $end
+$var reg 4 ' f [3:0] $end
+$var reg 3 ( sel [2:0] $end
+$scope module uut $end
+$var wire 4 ) a [3:0] $end
+$var wire 4 * b [3:0] $end
+$var wire 4 + c [3:0] $end
+$var wire 4 , d [3:0] $end
+$var wire 4 - e [3:0] $end
+$var wire 4 . f [3:0] $end
+$var wire 3 / sel [2:0] $end
+$var wire 4 0 y [3:0] $end
+$var wire 4 1 w5 [3:0] $end
+$var wire 4 2 w4 [3:0] $end
+$var wire 4 3 w3 [3:0] $end
+$var wire 4 4 w2 [3:0] $end
+$var wire 4 5 w1 [3:0] $end
+$scope module mux1 $end
+$var wire 4 6 a [3:0] $end
+$var wire 4 7 b [3:0] $end
+$var wire 1 8 sel $end
+$var wire 4 9 y [3:0] $end
+$upscope $end
+$scope module mux2 $end
+$var wire 4 : a [3:0] $end
+$var wire 4 ; b [3:0] $end
+$var wire 1 < sel $end
+$var wire 4 = y [3:0] $end
+$upscope $end
+$scope module mux3 $end
+$var wire 4 > a [3:0] $end
+$var wire 4 ? b [3:0] $end
+$var wire 1 @ sel $end
+$var wire 4 A y [3:0] $end
+$upscope $end
+$scope module mux4 $end
+$var wire 4 B a [3:0] $end
+$var wire 4 C b [3:0] $end
+$var wire 1 D sel $end
+$var wire 4 E y [3:0] $end
+$upscope $end
+$scope module mux5 $end
+$var wire 4 F a [3:0] $end
+$var wire 4 G b [3:0] $end
+$var wire 1 H sel $end
+$var wire 4 I y [3:0] $end
+$upscope $end
+$scope module mux6 $end
+$var wire 4 J a [3:0] $end
+$var wire 4 K b [3:0] $end
+$var wire 1 L sel $end
+$var wire 4 M y [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1010 M
+0L
+b1110 K
+b1010 J
+b1110 I
+0H
+bx G
+b1110 F
+b1010 E
+0D
+b1100 C
+b1010 B
+b1110 A
+0@
+b1111 ?
+b1110 >
+b1100 =
+0<
+b1101 ;
+b1100 :
+b1010 9
+08
+b1011 7
+b1010 6
+b1010 5
+b1100 4
+b1110 3
+b1010 2
+b1110 1
+b1010 0
+b0 /
+b1111 .
+b1110 -
+b1101 ,
+b1100 +
+b1011 *
+b1010 )
+b0 (
+b1111 '
+b1110 &
+b1101 %
+b1100 $
+b1011 #
+b1010 "
+b1010 !
+$end
+#10
+b1011 !
+b1011 0
+b1011 M
+b1011 2
+b1011 E
+b1011 J
+b1111 1
+b1111 I
+b1111 K
+b1011 5
+b1011 9
+b1011 B
+b1101 4
+b1101 =
+b1101 C
+b1111 3
+b1111 A
+b1111 F
+18
+1<
+1@
+b1 (
+b1 /
+#20
+b1100 !
+b1100 0
+b1100 M
+b1010 5
+b1010 9
+b1010 B
+b1100 4
+b1100 =
+b1100 C
+b1110 3
+b1110 A
+b1110 F
+b1100 2
+b1100 E
+b1100 J
+bx 1
+bx I
+bx K
+08
+0<
+0@
+1D
+1H
+b10 (
+b10 /
+#30
+b1101 !
+b1101 0
+b1101 M
+b1101 2
+b1101 E
+b1101 J
+b1011 5
+b1011 9
+b1011 B
+b1101 4
+b1101 =
+b1101 C
+b1111 3
+b1111 A
+b1111 F
+18
+1<
+1@
+b11 (
+b11 /
+#40
+b1010 5
+b1010 9
+b1010 B
+b1100 4
+b1100 =
+b1100 C
+b1110 3
+b1110 A
+b1110 F
+b1010 2
+b1010 E
+b1010 J
+b1110 1
+b1110 I
+b1110 K
+b1110 !
+b1110 0
+b1110 M
+08
+0<
+0@
+0D
+0H
+1L
+b100 (
+b100 /
+#50
+b1111 !
+b1111 0
+b1111 M
+b1011 2
+b1011 E
+b1011 J
+b1111 1
+b1111 I
+b1111 K
+b1011 5
+b1011 9
+b1011 B
+b1101 4
+b1101 =
+b1101 C
+b1111 3
+b1111 A
+b1111 F
+18
+1<
+1@
+b101 (
+b101 /
+#60
+bx !
+bx 0
+bx M
+b1010 5
+b1010 9
+b1010 B
+b1100 4
+b1100 =
+b1100 C
+b1110 3
+b1110 A
+b1110 F
+b1100 2
+b1100 E
+b1100 J
+bx 1
+bx I
+bx K
+08
+0<
+0@
+1D
+1H
+b110 (
+b110 /
+#70
+b1101 2
+b1101 E
+b1101 J
+b1011 5
+b1011 9
+b1011 B
+b1101 4
+b1101 =
+b1101 C
+b1111 3
+b1111 A
+b1111 F
+18
+1<
+1@
+b111 (
+b111 /
+#80
