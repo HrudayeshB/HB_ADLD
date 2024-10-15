@@ -1,0 +1,47 @@
+SHELL = /bin/csh
+
+# VCS flags
+VCS_FLAGS = -v -Mupdate -Rpp -full64 -debug_acc+all
+
+# Directories
+DESIGN_DIR = design
+TESTBENCH_DIR = testbench
+OUTPUT_DIR = output
+
+# Get all Verilog files in design and testbench folders
+DESIGN_FILES = $(wildcard $(DESIGN_DIR)/*.v)
+TESTBENCH_FILES = $(wildcard $(TESTBENCH_DIR)/*.v)
+
+# Default target: compile and run
+all: run
+
+# Rule to compile design and testbench files
+compile:
+	@mkdir -p $(OUTPUT_DIR)
+	@if [ -z "$(DESIGN_FILES)" ]; then \
+		echo "No design files found in $(DESIGN_DIR)"; \
+		exit 1; \
+	fi
+	@if [ -z "$(TESTBENCH_FILES)" ]; then \
+		echo "No testbench files found in $(TESTBENCH_DIR)"; \
+		exit 1; \
+	fi
+	# Compile with VCS, output all files to output directory
+	vcs $(VCS_FLAGS) -o $(OUTPUT_DIR)/simv $(DESIGN_FILES) $(TESTBENCH_FILES)
+
+# Rule to run the simulation
+run: compile
+	@echo "Running simulation..."
+	@cd $(OUTPUT_DIR) && ./simv
+
+# Rule to open the waveform in GUI mode
+wave: compile
+	@echo "Running simulation with waveform GUI..."
+	@cd $(OUTPUT_DIR) && ./simv -gui
+
+# Clean up generated files
+clean:
+	@rm -rf $(OUTPUT_DIR) simv* csrc ucli.key *.daidir *.vpd *.log *.key
+
+# Phony targets
+.PHONY: all compile run wave clean
