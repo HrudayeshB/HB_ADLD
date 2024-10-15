@@ -170,26 +170,26 @@ To use a single `Makefile` across all project directories, instead of including 
 
 Add this line to your `.bashrc` or `.zshrc`, and change the path to Makefile accordingly and source the file or restart terminal: 
 
-     ```bash
+```bash
      alias icv='make -f path/to/Makefile'
-     ```
+```
 
 Now you can use as follows (provided you have created `design` and `testbench` folders in yout project directory):
 
 To compile:
-     ```bash
+```bash
      icv run
-     ```
+```
 
 To show Waveforms:
-     ```bash
+```bash
      icv wave
-     ```
+```
 
 To clear Output generated files:
-     ```bash
+```bash
      icv clean
-     ```
+```
 
 
 # Verilog Simulation with Icarus Verilog and GTKWave
