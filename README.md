@@ -192,6 +192,7 @@ To clear Output generated files:
 ```
 
 
+
 # Verilog Simulation with Icarus Verilog and GTKWave
 
 This guide explains how to install Icarus Verilog and GTKWave on Ubuntu, simulate Verilog designs, and view the resulting waveforms.
