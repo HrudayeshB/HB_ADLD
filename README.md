@@ -182,12 +182,12 @@ To compile:
      ```
 
 To show Waveforms:
-	 ```bash
+     ```bash
      icv wave
      ```
 
 To clear Output generated files:
-	 ```bash
+     ```bash
      icv clean
      ```
 
