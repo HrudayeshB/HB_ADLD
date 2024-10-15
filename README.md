@@ -131,13 +131,13 @@ This is Makefile_2.0, it is set up to compile all Verilog files in the `design` 
 
 This setup automatically compiles all the design files in the `design` folder and the testbench files in the `testbench` folder.
 
-## Makefile for Icarus Verilog
+## Makefile for Icarus Verilog and VCS
 
 Makefile for Icarus for easy compilation and simulation, follow the steps:
 
-1. Prepare `design` and `testbench` folders in the project folder same as for the VCS Makefile_2.0
+1. Prepare `design` and `testbench` folders in the project folder same as for the VCS Makefile_2.0 and same for Icarus Verilog.
 
-2. Download and rename `icarus_Makefile` to `Makefile` and place it in project directory
+2. Download and rename `icarus_Makefile` (for Icarus) and `Makefile_3.0` (for VCS) to `Makefile` and place it in project directory
 
 3. To compile the design and run the simulation:
 
@@ -153,7 +153,7 @@ Makefile for Icarus for easy compilation and simulation, follow the steps:
      make wave
      ```
      
-    This opens GTKWave and shows waveforms
+    This opens GTKWave (for Icarus), DVE (for VCS) and shows waveforms
 
 5. To clean any generated files (`output`):
 
