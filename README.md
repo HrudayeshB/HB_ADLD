@@ -41,6 +41,7 @@ This is my repo that stores all my assignments and some projects related to Digi
 12. **`+define+<macro>`**  
     Define a macro for the Verilog source code during compilation.
 
+
 ## Icarus Verilog (iverilog) Flags
 
 1. **`-g2005-sv`**  
@@ -80,6 +81,9 @@ This is my repo that stores all my assignments and some projects related to Digi
 - **Timescale**: Define timescale appropriately using `-timescale` (VCS) or `-t` (Icarus), especially when dealing with high-precision timing in simulations.
 
 These flags cover the most useful and common options for both VCS and Icarus Verilog to help you compile, simulate, and debug Verilog designs efficiently.
+
+
+# Makefiles
 
 ## Using the Makefile for Compilation
 
@@ -160,6 +164,33 @@ Makefile for Icarus for easy compilation and simulation, follow the steps:
      ```bash
      make clean
      ```
+## Alias single Makefile
+
+To use a single `Makefile` across all project directories, instead of including a copy in each project folder, we can create an alias to the location of original `Makefile`:
+
+Add this line to your `.bashrc` or `.zshrc`, and change the path to Makefile accordingly: 
+
+     ```bash
+     alias icv='make -f path/to/Makefile'
+     ```
+
+Now you can use as follows (provided you have created `design` and `testbench` folders in yout project directory):
+
+	To compile:
+     ```bash
+     icv run
+     ```
+
+	To show Waveforms:
+	 ```bash
+     icv wave
+     ```
+
+    To clear Output generated files:
+	 ```bash
+     icv clean
+     ```
+
 
 # Verilog Simulation with Icarus Verilog and GTKWave
 

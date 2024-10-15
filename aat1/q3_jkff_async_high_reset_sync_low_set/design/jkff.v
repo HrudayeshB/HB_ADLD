@@ -4,7 +4,6 @@ module jkff (
 );
 
 always @ (posedge clk or posedge rst) begin
-
 	if (rst) q <= 1'b0; // async active high reset
 	else if (!setlow) q <= 1'b1; // sync active low set
 	else begin
@@ -17,5 +16,4 @@ always @ (posedge clk or posedge rst) begin
 		endcase
 	end
 end
-
 endmodule

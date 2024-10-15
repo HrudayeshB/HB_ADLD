@@ -1,9 +1,9 @@
-# Define the directories
-DESIGN_DIR = design
-TB_DIR = testbench
-OUTPUT_DIR = output
+# Define directories (use relative paths provided during invocation)
+DESIGN_DIR ?= design
+TB_DIR ?= testbench
+OUTPUT_DIR ?= output
 
-# Define the Verilog source files (modify according to your filenames)
+# Define the Verilog source files
 DESIGN_FILES = $(wildcard $(DESIGN_DIR)/*.v)
 TB_FILES = $(wildcard $(TB_DIR)/*.v)
 
@@ -31,3 +31,5 @@ wave: $(WAVEFORM_FILE)
 # Clean generated files
 clean:
 	rm -rf $(OUTPUT_DIR)
+
+.PHONY: all clean compile run wave
