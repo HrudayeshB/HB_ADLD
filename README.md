@@ -168,7 +168,7 @@ Makefile for Icarus for easy compilation and simulation, follow the steps:
 
 To use a single `Makefile` across all project directories, instead of including a copy in each project folder, we can create an alias to the location of original `Makefile`:
 
-Add this line to your `.bashrc` or `.zshrc`, and change the path to Makefile accordingly: 
+Add this line to your `.bashrc` or `.zshrc`, and change the path to Makefile accordingly and source the file or restart terminal: 
 
      ```bash
      alias icv='make -f path/to/Makefile'
@@ -176,17 +176,17 @@ Add this line to your `.bashrc` or `.zshrc`, and change the path to Makefile acc
 
 Now you can use as follows (provided you have created `design` and `testbench` folders in yout project directory):
 
-	To compile:
+To compile:
      ```bash
      icv run
      ```
 
-	To show Waveforms:
+To show Waveforms:
 	 ```bash
      icv wave
      ```
 
-    To clear Output generated files:
+To clear Output generated files:
 	 ```bash
      icv clean
      ```
