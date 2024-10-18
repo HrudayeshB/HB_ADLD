@@ -1,4 +1,4 @@
-SHELL = /bin/csh
+SHELL = /bin/sh
 
 # VCS flags
 VCS_FLAGS = -v -Mupdate -Rpp -full64 -debug_acc+all
