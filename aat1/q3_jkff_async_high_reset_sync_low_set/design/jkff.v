@@ -1,3 +1,4 @@
+
 module jkff (
 	input j, k, clk, rst, setlow,
 	output reg q
