@@ -86,7 +86,7 @@ end
     wr_data = 8'hAB; #10;
     wr_data = 8'hEB; rd_en = 1'b1; #10;
     wr_data = 8'h66; #10;
-	wr_data = 8'd0;
+	  wr_data = 8'd0;
     wr_en = 1'b0;
     #20;
     rd_en = 1'b0;
