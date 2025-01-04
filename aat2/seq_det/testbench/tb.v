@@ -11,7 +11,7 @@ module tb;
         $dumpvars(0, tb);
         clk = 1'b0;  // Start with clock low
         rst_n = 1'b0;  // Apply reset
-        #3 rst_n = 1'b1;  // Deassert reset after 3 time units
+        #10 rst_n = 1'b1;  // Deassert reset after 3 time units 
     end
 
 
@@ -20,6 +20,7 @@ module tb;
 
     // Input stimulus
     initial begin
+        #5;
         in = 0; #10  // Idle state
         in = 1; #10  // Start sequence
         in = 0; #10  // '10'

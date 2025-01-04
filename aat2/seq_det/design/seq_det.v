@@ -10,13 +10,16 @@ end
 always @ (in or PS) begin 
 	case(PS)
 
-	A: begin NS = in ? B : A; out = 0; end 
-	B: begin NS = in ? D : C; out = 0; end
-	C: begin NS = in ? B : A; out = in ? 1 : 0; end
-	D: begin NS = in ? D : C; out = in ? 0 : 1; end
-	default: begin NS = A; out = 0; end
+	A: if (in) begin NS <= B; out <= 0; end else begin NS <= A; out <= 0; end// reset
+	B: if (in) begin NS <= D; out <= 0; end else begin NS <= C; out <= 0; end  // '1' detected
+	C: if (in) begin NS <= B; out <= 1; end else begin NS <= A; out <= 0; end // '10' detected
+	D: if (in) begin NS <= B; out <= 0; end else begin NS <= A; out <= 1; end  // '11' detected
+	default: begin NS <= A; out <= 0; end
 
 	endcase
 end
 
 endmodule 
+
+
+
